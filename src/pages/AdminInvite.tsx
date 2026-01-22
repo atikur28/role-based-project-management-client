@@ -25,7 +25,7 @@ const AdminInvite: React.FC = () => {
   const { data: invites } = useQuery<Invite[], Error>({
     queryKey: ["invites"],
     queryFn: async () => {
-      const res = await api.get("/auth/invites");
+      const res = await api.get("/auth/invite");
       return res.data.invites as Invite[];
     },
   });
