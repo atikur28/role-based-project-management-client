@@ -77,12 +77,12 @@ const AdminInvite: React.FC = () => {
             <div className="text-green-600 font-medium break-all text-center">
               Invite created! Link:{" "}
               <a
-                href={`http://localhost:5173/register/${inviteMutation.data?.token}`}
+                href={`https://project-management-client-orpin.vercel.app/register/${inviteMutation.data?.token}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-blue-600 hover:text-blue-700"
               >
-                {`http://localhost:5173/register/${inviteMutation.data?.token}`}
+                {`https://project-management-client-orpin.vercel.app/register/${inviteMutation.data?.token}`}
               </a>
             </div>
           )}
