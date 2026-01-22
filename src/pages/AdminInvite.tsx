@@ -127,15 +127,10 @@ const AdminInvite: React.FC = () => {
                 className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-gray-200 pb-2 last:border-b-0 gap-1 sm:gap-0"
               >
                 <div className="text-gray-700 font-medium">
-                  {inv.email} ({inv.role}){" "}
-                  <span
-                    className={`${
-                      inv.acceptedAt ? "text-green-600" : "text-yellow-600"
-                    }`}
-                  >
-                    {inv.acceptedAt ? "- Accepted" : "- Pending"}
-                  </span>
+                  {inv.email} ({inv.role})
+                  <span className="text-yellow-600"> - Pending</span>
                 </div>
+
                 <div className="text-gray-400 text-sm font-mono break-all">
                   {inv.token}
                 </div>
