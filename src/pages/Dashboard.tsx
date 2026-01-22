@@ -22,7 +22,7 @@ const Dashboard = () => {
             Role: <span className="font-semibold">{user?.role}</span>
           </p>
           <p className="text-gray-700">
-            Role: <span className="font-semibold">{user?.email}</span>
+            Email: <span className="font-semibold">{user?.email}</span>
           </p>
           <p className="text-gray-600 mt-2">
             Access your dashboards, manage projects, and control users based on
